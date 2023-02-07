@@ -25,5 +25,5 @@ if submit.button('Submit'):
     add_data = {'First Name': [first_name], 'Last Name': [last_name], 'Email Id': [email_id], 'Mobile No': [mobile_no], 'Username': [username], 'Password': [password]}
     add_data = pd.DataFrame(add_data)
     add_data.to_csv('registration_data.csv', mode='a', header = False, index = False)
-    st.success('Thank you for Restration')
+    st.success('Thank you for Registration')
     

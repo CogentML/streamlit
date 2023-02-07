@@ -51,7 +51,7 @@ if st.button('Submit'):
     # Check if username is unique
     else:
         cur = conn.cursor()
-        cur.execute(f"SELECT * FROM users WHERE username='{username}'")
+        cur.execute(f"SELECT * FROM registration WHERE username='{username}'")
         if cur.fetchone():
             st.error('Username already exists')
         else:
